@@ -18,8 +18,8 @@ function calculateSalary() {
   const governmentTaxes = baseOfTriangle * hourlyWage * 0.18
 
   // output
-  document.getElementById("area").innerHTML =
+  document.getElementById("salary").innerHTML =
     "Your payment will be: " + " $" + yourWage
-  document.getElementById("area").innerHTML =
+  document.getElementById("salary").innerHTML =
     "The government will take: " + " $" + governmentTaxes
 }
