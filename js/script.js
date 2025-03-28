@@ -15,7 +15,7 @@ function calculateSalary() {
   const hourlyWage = parseFloat(document.getElementById("hourly-wage").value)
   // process (corrected formula)
   const yourWage = hoursWorked * hourlyWage * (100 - 0.18)
-  const governmentTaxes = baseOfTriangle * hourlyWage * 0.18
+  const governmentTaxes = hoursWorked * hourlyWage * 0.18
 
   // output
   document.getElementById("salary").innerHTML =
