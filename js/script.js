@@ -4,9 +4,26 @@
 // Created on: Sep 2020
 // This file contains the JS functions for index.html
 
+"use strict"
+
 /**
- * Displays an alert with the message "Hello, World!"
+ * This function calculates Salary.
  */
-function myButtonClicked() {
-  alert("Hello, World!")
+function calculateSalary() {
+  // input
+  const hoursWorked= parseFloat(
+    document.getElementById("hours-worked").value
+  )
+  const hourlyWage = parseFloat(
+    document.getElementById("hourly-wage").value
+  )
+  // process (corrected formula)
+  const yourWage = (hoursWorked * hourlyWage) * (100-0.18)
+  const governmentTaxes = (baseOfTriangle * hourlyWage) * (0.18)
+
+  // output
+  document.getElementById("area").innerHTML =
+    "Your payment will be: " + " $" + yourWage 
+  document.getElementById("area").innerHTML =
+    "The government will take: " +  " $" + governmentTaxes
 }
