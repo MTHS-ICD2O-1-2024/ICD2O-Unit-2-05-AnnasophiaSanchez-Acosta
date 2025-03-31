@@ -1,7 +1,7 @@
-// Copyright (c) 2020 Mr. Coxall All rights reserved
+// Copyright (c) 2020 . Coxall All rights reserved
 //
 // Created by: Mr. Coxall
-// Created on: Sep 2020
+// Created on: mar 2025
 // This file contains the JS functions for index.html
 
 "use strict"
@@ -19,7 +19,7 @@ function calculateSalary() {
 
   // output
   document.getElementById("salary").innerHTML =
-    "Your payment will be: " + " $" + yourWage
-  document.getElementById("salary").innerHTML =
-    "The government will take: " + " $" + governmentTaxes
+    "Your payment will be: " + " $" + `${yourWage.toFixed(2)}`
+  document.getElementById("tax").innerHTML =
+    "The government will take: " + " $" + `${governmentTaxes.toFixed(2)}`
 }
